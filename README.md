@@ -19,5 +19,16 @@ To run the webapi project:
    c:\Users\IS7063\Desktop\Webapi>dotnet run
    
    
-   
+To change localhost portnumber:
+
+1) In project folder, Go to Properties folder.
+2) Then open launchSettings.json file,
+     "Webapi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "applicationUrl": "http://localhost:8060",        //change the port number
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
   
